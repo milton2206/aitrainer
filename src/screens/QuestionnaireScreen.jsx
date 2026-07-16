@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import OptionGroup from '../components/OptionGroup.jsx'
-import './QuestionnaireScreen.css'
 
 const GOALS = [
   { value: 'mass', label: 'Набор массы' },
@@ -56,9 +55,9 @@ export default function QuestionnaireScreen({ onNext }) {
   }
 
   return (
-    <main className="questionnaire">
-      <h1 className="questionnaire__title">Расскажите о себе</h1>
-      <p className="questionnaire__hint">
+    <main className="screen">
+      <h1 className="screen__title">Расскажите о себе</h1>
+      <p className="screen__hint">
         Ответы помогут собрать программу под вас.
       </p>
 
@@ -93,7 +92,7 @@ export default function QuestionnaireScreen({ onNext }) {
 
       <button
         type="button"
-        className="questionnaire__next"
+        className="btn-primary"
         disabled={!isComplete}
         onClick={handleSubmit}
       >

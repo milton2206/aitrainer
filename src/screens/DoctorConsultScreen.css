@@ -1,0 +1,36 @@
+.notice {
+  padding: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text);
+  background: rgba(79, 140, 255, 0.1);
+  border: 1px solid rgba(79, 140, 255, 0.35);
+  border-radius: 12px;
+}
+
+.doc-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.doc-section__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.doc-list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.doc-list li {
+  overflow-wrap: anywhere;
+}

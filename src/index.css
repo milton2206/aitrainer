@@ -89,3 +89,48 @@ textarea {
 a {
   color: var(--accent);
 }
+
+/* ===== Общий каркас экранов потока ===== */
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.screen__title {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.screen__hint {
+  margin: -16px 0 0;
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+/* Первичная кнопка действия ("Далее") */
+.btn-primary {
+  width: 100%;
+  min-height: 52px;
+  margin-top: 8px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Второстепенная кнопка ("Назад") */
+.btn-ghost {
+  width: 100%;
+  min-height: 48px;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--border);
+}

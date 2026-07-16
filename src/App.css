@@ -6,4 +6,6 @@
   padding: 24px 16px;
   min-height: 100vh;
   min-height: 100dvh;
+  /* контейнер никогда не шире вьюпорта — страховка от горизонтального артефакта */
+  overflow-x: clip;
 }

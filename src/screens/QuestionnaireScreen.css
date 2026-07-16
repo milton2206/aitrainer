@@ -18,6 +18,41 @@
   color: var(--text-muted);
 }
 
+/* Временный блок предпросмотра выбранных данных */
+.questionnaire__debug {
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}
+
+.questionnaire__debug-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.questionnaire__debug-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 12px;
+  margin: 0;
+  font-size: 15px;
+}
+
+.questionnaire__debug-list dt {
+  color: var(--text-muted);
+}
+
+.questionnaire__debug-list dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
 .questionnaire__next {
   width: 100%;
   min-height: 52px;

@@ -55,13 +55,6 @@ export default function QuestionnaireScreen({ onNext }) {
     else console.log('Данные анкеты:', form)
   }
 
-  // Подпись по значению; "—" если ещё не выбрано
-  const labelOf = (options, value) =>
-    options.find((o) => o.value === value)?.label ?? '—'
-  const equipmentLabels = form.equipment.length
-    ? form.equipment.map((v) => labelOf(EQUIPMENT, v)).join(', ')
-    : '—'
-
   return (
     <main className="questionnaire">
       <h1 className="questionnaire__title">Расскажите о себе</h1>
@@ -97,21 +90,6 @@ export default function QuestionnaireScreen({ onNext }) {
         value={form.daysPerWeek}
         onChange={update('daysPerWeek')}
       />
-
-      {/* ВРЕМЕННЫЙ блок для проверки сбора данных — убрать при генерации */}
-      <div className="questionnaire__debug">
-        <span className="questionnaire__debug-tag">проверка данных</span>
-        <dl className="questionnaire__debug-list">
-          <dt>Цель</dt>
-          <dd>{labelOf(GOALS, form.goal)}</dd>
-          <dt>Уровень</dt>
-          <dd>{labelOf(LEVELS, form.level)}</dd>
-          <dt>Оборудование</dt>
-          <dd>{equipmentLabels}</dd>
-          <dt>Дней в неделю</dt>
-          <dd>{form.daysPerWeek ?? '—'}</dd>
-        </dl>
-      </div>
 
       <button
         type="button"

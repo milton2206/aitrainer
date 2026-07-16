@@ -1,0 +1,39 @@
+.option-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0; /* fieldset не должен ломать перенос на узком экране */
+}
+
+.option-group__label {
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.option-group__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.option-btn {
+  /* Крупная зона нажатия */
+  min-height: 48px;
+  flex: 1 1 calc(50% - 5px); /* по 2 в ряд, тянутся на всю ширину */
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.option-btn--active {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}

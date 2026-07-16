@@ -1,10 +1,15 @@
 import './App.css'
-import HomeScreen from './screens/HomeScreen.jsx'
+import QuestionnaireScreen from './screens/QuestionnaireScreen.jsx'
 
 export default function App() {
+  const handleNext = (form) => {
+    // Следующий экран пока в разработке — сохранённые данные логируем.
+    console.log('Данные анкеты:', form)
+  }
+
   return (
     <div className="app-container">
-      <HomeScreen />
+      <QuestionnaireScreen onNext={handleNext} />
     </div>
   )
 }

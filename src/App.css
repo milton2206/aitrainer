@@ -1,0 +1,9 @@
+/* Контейнер по центру: узкий на мобильном, ограничен на десктопе */
+.app-container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  min-height: 100vh;
+  min-height: 100dvh;
+}

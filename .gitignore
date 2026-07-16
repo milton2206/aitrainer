@@ -1,0 +1,20 @@
+# Зависимости
+node_modules
+
+# Сборка
+dist
+
+# Переменные окружения
+.env
+.env.*
+
+# Системные файлы
+.DS_Store
+
+# Логи
+*.log
+npm-debug.log*
+
+# Редакторы
+.vscode
+.idea

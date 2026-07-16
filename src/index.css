@@ -1,0 +1,88 @@
+/* ===== Глобальный сброс: mobile-first, тёмная тема ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Тёмная палитра */
+  --bg: #0f1115;
+  --surface: #181b22;
+  --text: #f2f4f8;
+  --text-muted: #9aa3b2;
+  --accent: #4f8cff;
+  --border: #262b34;
+
+  color-scheme: dark;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* никакого горизонтального скролла */
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Медиа не выпирает за пределы контейнера */
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Базовые интерактивные элементы ===== */
+
+button {
+  min-height: 44px; /* удобная зона нажатия */
+  padding: 0 20px;
+  font-size: 16px;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--accent);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.85;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 12px 14px;
+  font-size: 16px; /* iOS не зумит поле при фокусе */
+  font-family: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+a {
+  color: var(--accent);
+}

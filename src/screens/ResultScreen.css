@@ -1,0 +1,105 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.day-card {
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.day-card__title {
+  margin: 0 0 12px;
+  font-size: 17px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.day-card__empty {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.ex-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ex-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+}
+
+.ex-row:first-child {
+  border-top: none;
+}
+
+.ex-row__main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0; /* позволяет длинному названию переноситься, а не толкать ширину */
+  flex: 1;
+}
+
+.ex-row__name {
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.ex-row__muscle {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.ex-row__scheme {
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.excluded {
+  padding: 14px 16px;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}
+
+.excluded__title {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.excluded__list {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.excluded__muscle {
+  color: var(--text-muted);
+}
+
+.notice__line {
+  margin: 0 0 8px;
+}
+
+.notice__line:last-child {
+  margin-bottom: 0;
+}
